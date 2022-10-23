@@ -1,0 +1,14 @@
+''' Type your code here. '''
+def name(name_split):
+    name_list = name_split.split()
+    if len(name_list) == 3:
+        first = name_list[0]
+        middle = name_list[1]
+        last = name_list[2]
+        print(f'{last}, {first[0]}.{middle[0]}.')
+    elif len(name_list) == 2:
+        first = name_list[0]
+        last = name_list[1]
+        print(f'{last}, {first[0]}.')
+nam = input()
+name(nam)
